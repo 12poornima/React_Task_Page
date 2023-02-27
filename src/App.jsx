@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import SingleTaskPage from "./Components/SingleTaskPage"
+import AllTask from "./Components/AllTask"
+import SingleTask from "./Components/SingleTask"
 import TaskAddedPage from "./Components/TaskAddedPage"
-import ViewAllTaskPage from "./Components/ViewAllTaskPage"
+
 
 
 function App() {
@@ -11,9 +12,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="viewtaskpage" element={<ViewAllTaskPage />} />
-          <Route path="singletask" element={<SingleTaskPage />} />
-          <Route path="taskadded" element={<TaskAddedPage />} />
+          <Route path="allViewTask" element={<AllTask />} />
+          <Route path="singletask" element={<SingleTask />} />
+          <Route path="taskadd" element={<TaskAddedPage />} />
         </Routes>
       </BrowserRouter>
     </div>

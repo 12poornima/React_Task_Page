@@ -1,11 +1,17 @@
 import React from 'react'
-import "./TaskAddedPage.css"
+import "./TaskAdded.css"
 
 function TaskAddedPage() {
+
+    async function submitbtn() {
+        alert("hau")
+
+    }
+
     return (
         <div>
             <div className="center">
-                <h1>Task Added</h1>
+                <h1 className='task' >Task Added</h1>
                 <div className="form1">
                     <div className="txt_field">
                         <input type="text" className='title' required />
@@ -17,8 +23,8 @@ function TaskAddedPage() {
                         <span></span>
                         <label htmlFor="">Discription</label>
                     </div>
-                    <input type="submit" value="Submit" className='sub' />
-                    <p className='parasss' >“Before you reject a task as Impossible, ask yourself why God presented you with this thing to be done.”</p>
+                    <input type="submit" value="Submit" onClick={submitbtn} className='sub' />
+                    <p className='parasss' >“Before you reject a task as Impossible, <br /> ask yourself why God presented you with this thing to be done.”</p>
                 </div>
             </div>
 
