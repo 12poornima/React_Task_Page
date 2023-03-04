@@ -32,7 +32,7 @@ function AllTask() {
                     })
                 }
                 <div>
-                    <button className='btn' onClick={taskAddedPage} >add your task</button>
+                    <button className='btn' onClick={taskAddedPage} >ADD YOUR'S TASK</button>
                 </div>
             </div>
         </div>

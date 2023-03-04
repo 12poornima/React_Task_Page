@@ -1,14 +1,21 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function SingleTask({ taskData }) {
+    const navigate = useNavigate()
+    async function editbtn() {
+        navigate("/edit")
+    }
     return (
         <div>
             <div className="main-box">
-                <h1 className='title'>Title</h1>
-                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, officiis voluptatibus. Atque, officiis! At eos, magni minus velit rerum, vel repudiandae eum praesentium exercitationem, ex nobis cum pariatur odit sit.
+                <h1 className='title'>{taskData.tittle}</h1>
+                <p className='para'>{taskData.discription}
                 </p>
-                <button>Edit</button>
-                <button>Delete</button>
+                <div className="btn-grp">
+                    <button className='edit_btn' onClick={editbtn} >Edit</button>
+                    <button className='delete-btn' >Delete</button>
+                </div>
             </div>
         </div>
     )
