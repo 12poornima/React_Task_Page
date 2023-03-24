@@ -1,7 +1,10 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 function SingleTask({ taskData }) {
+    const location = useLocation()
+    console.log(location.state)
+
     const navigate = useNavigate()
     async function editbtn() {
         navigate("/edit", { state: location.state })

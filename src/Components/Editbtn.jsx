@@ -19,13 +19,12 @@ function Editbtn() {
         console.log(response);
     }
     useEffect(() => {
-        // setTitle(location.state.tittle)
-        // setDiscription(location.state.discription)
+        setTitle(location.state.tittle)
+        setDiscription(location.state.discription)
     }, [])
 
     return (
         <div>
-
             <div className="main_box">
                 <h1 className='head-title' >Edit Your Blog</h1>
                 <div className='form1' >
@@ -40,7 +39,6 @@ function Editbtn() {
                         <input type="text" value={discription} onChange={(e) => { setDiscription(e.target.value) }} className='dis' />
                     </div>
                     <input type="submit" onClick={btnedit} className='sub' />
-
                 </div>
             </div>
         </div>
