@@ -19,8 +19,8 @@ function Editbtn() {
         console.log(response);
     }
     useEffect(() => {
-        setTitle(location.state.tittle)
-        setDiscription(location.state.discription)
+        // setTitle(location.state.tittle)
+        // setDiscription(location.state.discription)
     }, [])
 
     return (
